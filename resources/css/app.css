@@ -1,0 +1,173 @@
+:root {
+  color: #1f2937;
+  background: #f6f8fb;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    linear-gradient(120deg, rgba(14, 165, 233, 0.08), transparent 36rem),
+    #f6f8fb;
+}
+
+code {
+  border-radius: 4px;
+  background: #eef2f7;
+  color: #0f172a;
+  font-size: 0.94em;
+  padding: 0.12rem 0.32rem;
+}
+
+.page-shell {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 2rem;
+}
+
+.status-panel {
+  display: grid;
+  width: min(100%, 980px);
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.status-copy,
+.health-card {
+  border: 1px solid #d8e0ea;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.status-copy {
+  display: flex;
+  min-height: 360px;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #047857;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(2.25rem, 4vw, 4rem);
+  line-height: 1;
+}
+
+.intro {
+  max-width: 52rem;
+  margin: 1.25rem 0 0;
+  color: #4b5563;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.health-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #111827;
+  font-weight: 700;
+}
+
+.status-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 999px;
+  background: #10b981;
+  box-shadow: 0 0 0 5px rgba(16, 185, 129, 0.14);
+}
+
+.status-dot--error {
+  background: #ef4444;
+  box-shadow: 0 0 0 5px rgba(239, 68, 68, 0.14);
+}
+
+.health-list {
+  display: grid;
+  gap: 0.9rem;
+  margin: 2rem 0;
+}
+
+.health-list div {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.health-list dt {
+  color: #64748b;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.health-list dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: #111827;
+}
+
+.muted {
+  margin: 2rem 0;
+  color: #64748b;
+}
+
+.refresh-button {
+  min-height: 2.75rem;
+  border: 0;
+  border-radius: 6px;
+  background: #0f172a;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+}
+
+.refresh-button:hover {
+  background: #1e293b;
+}
+
+@media (max-width: 760px) {
+  .page-shell {
+    padding: 1rem;
+  }
+
+  .status-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .status-copy {
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 2.35rem;
+  }
+}

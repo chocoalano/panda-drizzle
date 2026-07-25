@@ -10,10 +10,21 @@
 
 # next.js
 /.next/
+/.nuxt/
+/.output/
+/.nitro/
 /out/
 
 # production
 /build
+
+# storage
+/storage/app/private/*
+/storage/app/public/*
+/storage/logs/*
+!/storage/app/private/.gitkeep
+!/storage/app/public/.gitkeep
+!/storage/logs/.gitkeep
 
 # misc
 .DS_Store
@@ -25,10 +36,23 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+CLAUDE.local.md
+
+# agent tooling (local only)
+.claude/
+.codex/
+.cursor/
+.windsurf/
+.github/copilot-instructions.md
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.aider*
 
 # vercel
 .vercel
