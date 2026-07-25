@@ -1,6 +1,6 @@
 # Panda Framework
 
-Pnda adalah framework aplikasi berbasis Bun, Elysia, Nuxt, Drizzle, dan Zod. Struktur proyek ini mengikuti pola Laravel secara konseptual: routing dipusatkan, bootstrap dipisahkan dari entrypoint, konfigurasi berada di `config`, logic HTTP berada di `app/Http`, console tersedia lewat `panda.ts`, dan database dipisahkan antara model aplikasi, schema Drizzle, migration, serta seeder.
+Panda adalah framework aplikasi berbasis Bun, Elysia, Nuxt, Drizzle, dan Zod. Struktur proyek ini mengikuti pola Laravel secara konseptual: routing dipusatkan, bootstrap dipisahkan dari entrypoint, konfigurasi berada di `config`, logic HTTP berada di `app/Http`, console tersedia lewat `panda.ts`, dan database dipisahkan antara model aplikasi, schema Drizzle, migration, serta seeder.
 
 Dokumentasi ini adalah kontrak framework. Setiap perubahan kode harus mengikuti aturan di bawah ini.
 
